@@ -26,7 +26,7 @@ async function bootstrap() {
     .setTitle('🏡 Buuk Core API')
     .setDescription('Buuk Core API')
     .setVersion('1.0.0')
-    .addTag('Auth', 'Auth API Endpoints!')
+    .addTag('Question Pool', 'Question Pool API Endpoints!')
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, options);

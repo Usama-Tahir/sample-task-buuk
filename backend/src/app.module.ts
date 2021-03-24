@@ -5,6 +5,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SchemaModule } from './schema/schema.module';
 import * as Joi from '@hapi/joi';
 import { MongooseModule } from '@nestjs/mongoose';
+import { QuestionsPoolModule } from './questions-pool/questions-pool.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { MongooseModule } from '@nestjs/mongoose';
         useFindAndModify: false,
       }),
     }),
+    QuestionsPoolModule,
   ],
   controllers: [AppController],
   providers: [AppService],
